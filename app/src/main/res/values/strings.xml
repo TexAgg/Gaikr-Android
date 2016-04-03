@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Gaikr</string>
+    <string name="next_button_string">Next</string>
+    <string name="prev_button_string">Previous</string>
 </resources>
