@@ -19,7 +19,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/prev_button"
-        android:enabled="true"/>
+        android:enabled="true"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -28,7 +29,7 @@
         android:id="@+id/prev_button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="false"/>
+        android:layout_alignParentStart="true"/>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -42,9 +43,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
-            android:layout_gravity="center"
+            android:layout_gravity="right|center_vertical"
             android:background="@drawable/abc_ic_star_black_36dp"
-            android:src="@drawable/me"/>
+            android:src="@drawable/me"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/person_name"
+            android:id="@+id/textView"
+            android:layout_gravity="left|bottom"
+            android:typeface="sans"
+            />
+
     </FrameLayout>
 
 </RelativeLayout>
